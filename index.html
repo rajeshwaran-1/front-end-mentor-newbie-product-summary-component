@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            red: ['Red Hat Display', 'serif']
+          },
+          colors: {
+            clifford: '#da373d',
+            paleBlue: 'hsl(225, 100%, 94%)',
+            brightBlue: 'hsl(245, 75%, 52%)',
+            veryPaleBlue: 'hsl(225, 100%, 98%)',
+            desaturatedBlue: 'hsl(224, 23%, 55%)',
+            darkBlue: 'hsl(223, 47%, 23%)',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="font-red bg-[url('/images/pattern-background-mobile.svg')] md:bg-[url('/images/pattern-background-desktop.svg')] bg-paleBlue flex justify-center items-center min-h-screen p-6 bg-no-repeat">
+
+  <main class="max-w-md md:max-w-xs bg-white rounded-xl overflow-hidden flex flex-col items-center justify-center">
+
+    <div class="rounded-t-lg overflow-hidden mb-4">
+    <img src="images/illustration-hero.svg" alt="Hero image">
+    </div>
+    
+    <div class="p-4">
+    <h1 class="text-darkBlue text-center text-2xl md:text-xl font-black mb-4">Order Summary</h1>
+
+    <p class="text-gray-500 text-lg md:text-xs  text-center md:max-w-[230px] font-semibold mb-4">You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+
+  <div class="flex bg-veryPaleBlue justify-center items-center gap-10 p-2 rounded-lg mb-4">
+
+    <div class="flex gap-4">
+      <div class="w-14 h-12 md:w-10 md:h-10">
+      <img src="images/icon-music.svg" alt="music icon">
+      </div>
+
+      <div>
+        <p class="text-lg md:text-sm font-bold text-darkBlue">Annual Plan</p>
+        <p class="text-base md:text-xs text-gray-600 font-medium">$59.99/year</p>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-base md:text-xs text-brightBlue font-bold underline hover:text-blue-400 cursor-pointer">Change</p>
+    </div>
+  </div>
+
+    <button class="bg-brightBlue px-2 py-2 rounded-md w-full mb-4 text-white text-lg md:text-xs font-bold hover:bg-blue-500 cursor-pointer ">Proceed to Payment</button>
+
+    <p class="text-center text-lg md:text-xs font-black text-gray-500 hover:text-darkBlue cursor-pointer">Cancel Order</p>
+  </div>
+  </main> 
+
+</body>
+</html>
